@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Distribución Exponencial</title>
+    <link rel="stylesheet" href="exponencial.css">
+    <link rel="stylesheet" href="../nav-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/346399.png" alt="">
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="exponencial/exponencial.html">Calculadora</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <center><strong><h1 id="tit">Distribución Exponencial</h1></strong></center>
+    <section class="calc">
+      
+      <div class="container">
+        <h1>Calculadora de Distribución Exponencial</h1>
+        <form id="calculator">
+          <label for="lambda">Lambda (λ)</label>
+          <input type="number" id="lambda" name="lambda" step="any" required>
+    
+          <label for="x">X</label>
+          <input type="number" id="x" name="x" step="any" required>
+    
+          <label for="condition">Condición</label>
+          <select id="condition" name="condition">
+            <option value="<">X &lt; x</option>
+            <option value="<=">X ≤ x</option>
+            <option value=">">X > x</option>
+            <option value=">=">X ≥ x</option>
+          </select>
+    
+          <input type="submit" value="Calcular">
+        </form>
+      </div>
+    
+      <div class="container">
+        <div id="result"></div><br>
+      </div>
+    </section>
+    
+    
+
+        
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-logo">
+                <img src="../img/346399.png" alt="Logo de la empresa">
+              </div>
+              <div class="footer-links">
+                <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Proyectos</a></li>
+                </ul>
+              </div>
+              <div class="footer-social-icons">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>Diseñado por Jarol &copy; 2023</p>
+            </div>
+          </footer>
+          <script src="../script.js"></script>
+        <script src="exponencial.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* exponencial.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+:root {
+  --color-primary: #262737;
+  --color-secondary: #1d1d29;
+  --color-accent: #0a0a0e;
+  --color-background: #f3f7f9;
+  --color-text: #000000;
+}
+main
+
+{
+  scroll-behavior: smooth;
+}
+
+#tit
+{
+font-size: 40px;
+}
+.calc
+{
+  padding: 50px;
+}
+/* exponencial.css */
+
+.container {
+  max-width: 320px; /* Ajustar el ancho máximo según tus preferencias */
+  height: 450px;
+  width: 90%; /* Asegurar que ocupe el 90% del ancho disponible */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  max-width: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary);
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f3f7f9;
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
+
+input[type="submit"]:active {
+  transform: translateY(-3px);
+}
+
+input[type="submit"]::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+input[type="submit"]:hover::after {
+  background-color: var(--color-accent);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%; /* Opcional: ajusta la altura según tus necesidades */
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
