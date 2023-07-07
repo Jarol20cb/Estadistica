@@ -36,6 +36,18 @@ font-size: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
   font-family: 'Nunito', Arial, sans-serif;
 }
+.container2 {
+  max-width: 250px; /* Ajustar el ancho máximo según tus preferencias */
+  height: 150px;
+  width: 70%; /* Asegurar que ocupe el 90% del ancho disponible */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  font-family: 'Nunito', Arial, sans-serif;
+}
 
 h1 {
   margin-bottom: 20px;
@@ -131,4 +143,26 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container2:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Queris para modo de celular */
+@media (max-width: 767px) {
+  .calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    margin-top: 20px;
+    max-width: 350px;
+    font-size: 10px;
+    height: 80px;
+    width: 80%;
+  }
 }
