@@ -20,11 +20,17 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="exponencial/exponencial.html">Calculadora</a></li>
-                <li><a href="#">Acerca de</a></li>
-            </ul>            
+           <ul class="nav-links">
+    <li><a href="#home">Inicio</a></li>
+    <li>
+        <a href="#" onclick="toggleMenu()">Calculadora</a>
+        <ul id="submenu" style="display: none;">
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Acerca de</a></li>
+</ul>           
         </nav>
     </header>
 
@@ -86,6 +92,15 @@
         <p>Diseñado por Jarol &copy; 2023</p>
       </div>
     </footer>
+
+    function toggleMenu() {
+    var submenu = document.getElementById("submenu");
+    if (submenu.style.display === "none") {
+        submenu.style.display = "block";
+    } else {
+        submenu.style.display = "none";
+    }
+}
     
     <script src="script.js"></script>
 
